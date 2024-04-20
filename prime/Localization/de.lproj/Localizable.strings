@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  prime
+
+  Created by Linus Warnatz on 20.04.24.
+  
+*/
+
+// The title for the prime calculation screen
+"Calculate" = "Finden";
+
+"From" = "Von";
+
+"To" = "Bis";
+
+"Primes between %lld and %lld are: %@" = "%1$lld %2$lld %3$@";
+
+// The title for the prime checker
+"Check" = "Prüfen";
+
+"%lld is a prime number." = "%lld ist eine Primzahl.";
+
+"%lld is not a prime number." = "%lld ist keine Primzahl.";
+
+// A short name for prime factors, used in the tab bar
+"Factors" = "Faktoren";
+
+// The long title for the prime factorization calculator
+"Prime factorization" = "Primfaktorzerlegung";
+
+"The prime factors of %lld are: %@" = "Die Primfaktoren von %1$lld sind: %2$@";
+
+// The error displayed when the user tries to calculate the prime factors of 1 or 0
+"%lld does not have any factors." = "%lld hat keine Primfaktoren.";
+
+"This number is too large." = "Diese Zahl ist zu groß.";

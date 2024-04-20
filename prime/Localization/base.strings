@@ -1,0 +1,36 @@
+/* 
+  base.strings
+  prime
+
+  Created by Linus Warnatz on 20.04.24.
+  
+*/
+
+// The error displayed when the user tries to calculate the prime factors of 1 or 0
+"%lld does not have any factors." = "%lld";
+
+// The title for the prime calculation screen
+"Calculate" = "";
+
+"From" = "";
+
+"To" = "";
+
+"Primes between %lld and %lld are: %@" = "%1$lld %2$lld %3$@";
+
+// The title for the prime checker
+"Check" = "";
+
+"%lld is a prime number." = "%lld";
+
+"%lld is not a prime number." = "%lld";
+
+// A short name for prime factors, used in the tab bar
+"Factors" = "";
+
+// The long title for the prime factorization calculator
+"Prime factorization" = "";
+
+"The prime factors of %lld are: %@" = "%1$lld %2$@";
+
+"This number is too large." = "";

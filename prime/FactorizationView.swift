@@ -26,14 +26,20 @@ struct FactorizationView: View {
     @State var input = 10
     var body: some View {
         VStack {
-            Label("Primfaktorzerlegung", systemImage: "x.squareroot")
+            Label("Prime factorization", systemImage: "x.squareroot")
                 .font(.largeTitle)
             Spacer()
             TextField("", value: $input, formatter: NumberFormatter())
                 .padding()
                 .background(.tertiary)
                 .cornerRadius(5.0)
-            Text(input == 1 ? "1 hat keine Primfaktoren." : "Die Primfaktoren von \(input) sind: \(numberList(primeFactors(of: input)))")
+            if [0, 1].contains(input) {
+                Text("\(input) does not have any factors.")
+            } else if input >= 1_000_000 {
+                Text("This number is too large.")
+            } else {
+                Text("The prime factors of \(input) are: \(primeFactors(of: input).stringify())")
+            }
             Spacer()
         }
     }

@@ -13,7 +13,10 @@
 		1534D0C62BD3C0EC006095F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1534D0C52BD3C0EC006095F3 /* Preview Assets.xcassets */; };
 		1534D0CD2BD3C113006095F3 /* FactorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0CC2BD3C113006095F3 /* FactorizationView.swift */; };
 		1534D0CF2BD3C138006095F3 /* PrimeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0CE2BD3C138006095F3 /* PrimeCheckView.swift */; };
-		1534D0D12BD3C160006095F3 /* PrimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0D02BD3C160006095F3 /* PrimeListView.swift */; };
+		1534D0D42BD3C39D006095F3 /* NumberList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0D32BD3C39D006095F3 /* NumberList.swift */; };
+		1534D0D62BD3C44D006095F3 /* PrimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0D52BD3C44C006095F3 /* PrimeListView.swift */; };
+		1534D0D82BD3C531006095F3 /* IntIsPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0D72BD3C531006095F3 /* IntIsPrime.swift */; };
+		1534D0DD2BD3C925006095F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1534D0DB2BD3C925006095F3 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +28,13 @@
 		1534D0C52BD3C0EC006095F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1534D0CC2BD3C113006095F3 /* FactorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorizationView.swift; sourceTree = "<group>"; };
 		1534D0CE2BD3C138006095F3 /* PrimeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCheckView.swift; sourceTree = "<group>"; };
-		1534D0D02BD3C160006095F3 /* PrimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeListView.swift; sourceTree = "<group>"; };
 		1534D0D22BD3C1E3006095F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1534D0D32BD3C39D006095F3 /* NumberList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberList.swift; sourceTree = "<group>"; };
+		1534D0D52BD3C44C006095F3 /* PrimeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeListView.swift; sourceTree = "<group>"; };
+		1534D0D72BD3C531006095F3 /* IntIsPrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntIsPrime.swift; sourceTree = "<group>"; };
+		1534D0DC2BD3C925006095F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1534D0DE2BD3C92C006095F3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1534D0E22BD3CADB006095F3 /* base.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = base.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +67,14 @@
 		1534D0BC2BD3C0EA006095F3 /* prime */ = {
 			isa = PBXGroup;
 			children = (
+				1534D0E42BD3CAF2006095F3 /* Localization */,
 				1534D0D22BD3C1E3006095F3 /* Info.plist */,
 				1534D0BD2BD3C0EA006095F3 /* primeApp.swift */,
 				1534D0CC2BD3C113006095F3 /* FactorizationView.swift */,
 				1534D0CE2BD3C138006095F3 /* PrimeCheckView.swift */,
-				1534D0D02BD3C160006095F3 /* PrimeListView.swift */,
+				1534D0D72BD3C531006095F3 /* IntIsPrime.swift */,
+				1534D0D32BD3C39D006095F3 /* NumberList.swift */,
+				1534D0D52BD3C44C006095F3 /* PrimeListView.swift */,
 				1534D0BF2BD3C0EA006095F3 /* ContentView.swift */,
 				1534D0C12BD3C0EC006095F3 /* Assets.xcassets */,
 				1534D0C32BD3C0EC006095F3 /* prime.entitlements */,
@@ -78,6 +89,15 @@
 				1534D0C52BD3C0EC006095F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1534D0E42BD3CAF2006095F3 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				1534D0E22BD3CADB006095F3 /* base.strings */,
+				1534D0DB2BD3C925006095F3 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +141,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 				Base,
 			);
 			mainGroup = 1534D0B12BD3C0E9006095F3;
@@ -139,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1534D0C62BD3C0EC006095F3 /* Preview Assets.xcassets in Resources */,
+				1534D0DD2BD3C925006095F3 /* Localizable.strings in Resources */,
 				1534D0C22BD3C0EC006095F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,15 +172,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1534D0D42BD3C39D006095F3 /* NumberList.swift in Sources */,
 				1534D0C02BD3C0EA006095F3 /* ContentView.swift in Sources */,
 				1534D0CF2BD3C138006095F3 /* PrimeCheckView.swift in Sources */,
 				1534D0CD2BD3C113006095F3 /* FactorizationView.swift in Sources */,
+				1534D0D62BD3C44D006095F3 /* PrimeListView.swift in Sources */,
 				1534D0BE2BD3C0EA006095F3 /* primeApp.swift in Sources */,
-				1534D0D12BD3C160006095F3 /* PrimeListView.swift in Sources */,
+				1534D0D82BD3C531006095F3 /* IntIsPrime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1534D0DB2BD3C925006095F3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1534D0DC2BD3C925006095F3 /* en */,
+				1534D0DE2BD3C92C006095F3 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1534D0C72BD3C0EC006095F3 /* Debug */ = {
@@ -282,13 +318,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = prime/prime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"prime/Preview Content\"";
 				DEVELOPMENT_TEAM = 3ZKC6VXD5Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = prime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Prime;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,7 +344,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.libewa.prime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,13 +359,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = prime/prime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"prime/Preview Content\"";
 				DEVELOPMENT_TEAM = 3ZKC6VXD5Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = prime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Prime;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -346,7 +385,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.libewa.prime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

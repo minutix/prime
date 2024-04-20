@@ -13,21 +13,24 @@ struct ContentView: View {
             PrimeCheckView()
                 .tabItem({
                     Image(systemName: "checkmark.circle")
-                    Text("Prüfen")
+                    Text("Check")
                     })
-                .navigationTitle("Prüfen")
+                .navigationTitle("Check")
+                .padding()
             PrimeListView()
                 .tabItem({
                     Image(systemName: "function")
-                    Text("Ausrechnen")
+                    Text("Calculate")
                 })
-                .navigationTitle("Ausrechnen")
+                .navigationTitle("Calculate")
+                .padding()
             FactorizationView()
                 .tabItem({
                     Image(systemName: "x.squareroot")
-                    Text("Primfaktorzerlegung")
+                    Text("Factors")
                 })
-                .navigationTitle("Primfaktorzerlegung")
+                .navigationTitle("Prime factorization")
+                .padding()
         }
     }
 }
