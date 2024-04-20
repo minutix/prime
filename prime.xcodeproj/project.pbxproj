@@ -11,6 +11,9 @@
 		1534D0C02BD3C0EA006095F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0BF2BD3C0EA006095F3 /* ContentView.swift */; };
 		1534D0C22BD3C0EC006095F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1534D0C12BD3C0EC006095F3 /* Assets.xcassets */; };
 		1534D0C62BD3C0EC006095F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1534D0C52BD3C0EC006095F3 /* Preview Assets.xcassets */; };
+		1534D0CD2BD3C113006095F3 /* FactorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0CC2BD3C113006095F3 /* FactorizationView.swift */; };
+		1534D0CF2BD3C138006095F3 /* PrimeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0CE2BD3C138006095F3 /* PrimeCheckView.swift */; };
+		1534D0D12BD3C160006095F3 /* PrimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534D0D02BD3C160006095F3 /* PrimeListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,10 @@
 		1534D0C12BD3C0EC006095F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1534D0C32BD3C0EC006095F3 /* prime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = prime.entitlements; sourceTree = "<group>"; };
 		1534D0C52BD3C0EC006095F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1534D0CC2BD3C113006095F3 /* FactorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorizationView.swift; sourceTree = "<group>"; };
+		1534D0CE2BD3C138006095F3 /* PrimeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCheckView.swift; sourceTree = "<group>"; };
+		1534D0D02BD3C160006095F3 /* PrimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeListView.swift; sourceTree = "<group>"; };
+		1534D0D22BD3C1E3006095F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +59,11 @@
 		1534D0BC2BD3C0EA006095F3 /* prime */ = {
 			isa = PBXGroup;
 			children = (
+				1534D0D22BD3C1E3006095F3 /* Info.plist */,
 				1534D0BD2BD3C0EA006095F3 /* primeApp.swift */,
+				1534D0CC2BD3C113006095F3 /* FactorizationView.swift */,
+				1534D0CE2BD3C138006095F3 /* PrimeCheckView.swift */,
+				1534D0D02BD3C160006095F3 /* PrimeListView.swift */,
 				1534D0BF2BD3C0EA006095F3 /* ContentView.swift */,
 				1534D0C12BD3C0EC006095F3 /* Assets.xcassets */,
 				1534D0C32BD3C0EC006095F3 /* prime.entitlements */,
@@ -140,7 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1534D0C02BD3C0EA006095F3 /* ContentView.swift in Sources */,
+				1534D0CF2BD3C138006095F3 /* PrimeCheckView.swift in Sources */,
+				1534D0CD2BD3C113006095F3 /* FactorizationView.swift in Sources */,
 				1534D0BE2BD3C0EA006095F3 /* primeApp.swift in Sources */,
+				1534D0D12BD3C160006095F3 /* PrimeListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,12 +282,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = prime/prime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"prime/Preview Content\"";
 				DEVELOPMENT_TEAM = 3ZKC6VXD5Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = prime/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -306,12 +321,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = prime/prime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"prime/Preview Content\"";
 				DEVELOPMENT_TEAM = 3ZKC6VXD5Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = prime/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

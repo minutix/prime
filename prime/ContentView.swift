@@ -9,13 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView() {
+            PrimeCheckView()
+                .tabItem({
+                    Image(systemName: "checkmark.circle")
+                    Text("Prüfen")
+                    })
+                .navigationTitle("Prüfen")
+            PrimeListView()
+                .tabItem({
+                    Image(systemName: "function")
+                    Text("Ausrechnen")
+                })
+                .navigationTitle("Ausrechnen")
+            FactorizationView()
+                .tabItem({
+                    Image(systemName: "x.squareroot")
+                    Text("Primfaktorzerlegung")
+                })
+                .navigationTitle("Primfaktorzerlegung")
         }
-        .padding()
     }
 }
 
